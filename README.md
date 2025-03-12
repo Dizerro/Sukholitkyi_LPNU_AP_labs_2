@@ -1,0 +1,1 @@
+# Sukholitkyi_LPNU_AP_labs_2
