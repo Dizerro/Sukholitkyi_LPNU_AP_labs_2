@@ -41,5 +41,4 @@ class TestSnakeOrder(unittest.TestCase):
         expected = [1, 2, 3, 4, 5, 6]
         self.assertEqual(snake_order(matrix), expected)
 
-if __name__ == "__main__":
-    unittest.main()
+unittest.main()
