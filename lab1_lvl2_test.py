@@ -1,13 +1,5 @@
 import unittest
-
-def snake_order(matrix):
-    result = []
-    for i, row in enumerate(matrix):
-        if i % 2 == 0:
-            result.extend(row)
-        else:
-            result.extend(reversed(row))
-    return result
+from lab1_lvl2 import snake_order
 
 class TestSnakeOrder(unittest.TestCase):
     def test_square_matrix(self):
