@@ -10,3 +10,5 @@ def has_three_sum(arr, P):
                 return True
             seen.add(arr[j])        
     return False
+
+print(has_three_sum([1, 1, 1], 3))
