@@ -5,14 +5,14 @@ class BinaryTree:
         self.right = None
 
 def branchSums(root):
-    def dfs(node, is_left):
+    def dfs(node):
         if not node:
             return 0
-        if not node.left and not node.right and is_left:
+        if not node.left and not node.right:
             return node.value
-        return dfs(node.left, True) + dfs(node.right, False)
+        return dfs(node.left) + dfs(node.right)
     
-    return dfs(root, False)
+    return dfs(root)
 
 root = BinaryTree(3)
 root.left = BinaryTree(9)
