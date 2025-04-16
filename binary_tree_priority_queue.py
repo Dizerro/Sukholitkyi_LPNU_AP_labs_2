@@ -76,26 +76,26 @@ class PriorityQueue:
 if __name__ == "__main__":
     queue = PriorityQueue()
 
-    queue.insert("Task A", 3)
-    queue.insert("Task B", 5)
-    queue.insert("Task C", 1)
-    queue.insert("Task D", 4)
-    queue.insert("Task E", 2)
+    queue.insert("A", 3)
+    queue.insert("B", 5)
+    queue.insert("C", 1)
+    queue.insert("D", 4)
+    queue.insert("E", 2)
 
     print("Черга після вставок:")
     queue.print_tree()
 
-    print("\nНайвищий пріоритет (peek):")
+    print("\n Найвищий пріоритет (peek):")
     print(queue.peek())
 
-    print("\nВидаляємо елемент з найвищим пріоритетом:")
+    print("\n Видаляємо елемент з найвищим пріоритетом:")
     print(queue.extract_max())
 
-    print("\nЧерга після видалення:")
+    print("\n Черга після видалення:")
     queue.print_tree()
 
-    print("\nЩе одне видалення:")
+    print("\n Ще одне видалення:")
     print(queue.extract_max())
 
-    print("\nЧерга після другого видалення:")
+    print("\n Черга після другого видалення:")
     queue.print_tree()
