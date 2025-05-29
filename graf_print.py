@@ -37,18 +37,22 @@ def draw_edge(canvas, x1, y1, x2, y2, weight):
 def generate_node_positions(n):
     positions = {}
     coords = [
-        (20, 2),   # top
-        (35, 8),   # top-right
-        (30, 20),  # bottom-right
-        (10, 20),  # bottom-left
-        (5, 8),    # top-left
-        (20, 12),  # center (for 6th)
+        (10, 2), #a
+        (20, 2),#b
+        (33, 4), #c
+        (33, 8), #d
+        (28, 12),#e
+        (25, 15),#f
+        (20, 18),#g
+        (14, 16),#h
+        (10, 12),#i
+        (0, 8),#j
     ]
     for i in range(n):
         if i < len(coords):
             positions[i] = coords[i]
         else:
-            positions[i] = (2 * i + 2, 12)  # fallback: in ряд по центру
+            positions[i] = (2 * i + 2, 12)
     return positions
 
 def draw_ascii_graph(filename):
