@@ -1,5 +1,5 @@
 import unittest
-from cable_planner import minimum_cable_length
+from src.cable_planner import minimum_cable_length
 
 
 class TestCablePlanner(unittest.TestCase):
